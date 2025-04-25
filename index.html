@@ -9,12 +9,12 @@
     <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body id="changeBody" class="min-h-screen ">
+<body id="changeBody" class="min-h-screen">
     
-        <section class="nav-bar">
+        <section class="nav-bar dark:bg-black dark:text-white">
             <nav class="px-8 py-2 shadow-lg">
                 <div class="flex flex-row w-full justify-between items-center ">
-                    <img src="/Images/acs.png" class="w-3/6 " alt="">
+                    <img src="Images/acs.png" class="w-3/6 " alt="">
                     <i class="fa-solid fa-bars fa-2xl text-gray-500 "></i>
                 </div>
                 <ul class="flex flex-col justify-center gap-7 mt-8 text-gray-500 font-semibold ">
@@ -23,7 +23,7 @@
                     <li class="flex flex-row items-center gap-1  "><i class="fa-solid fa-user"></i>Profile</li>
                     <li class="flex flex-row items-center gap-1  ">Contact<i class="fa-brands fa-facebook-messenger"></i></li>
                     <li>
-                        <button id="changeButton" class="border border-black px-4 py-2 rounded-md transition 0.3s ease hover:bg-black hover:text-white hover:cursor-pointer ">🌓 Theme</button>
+                        <button onclick="changeMode()" id="changeButton" class="border border-black px-4 py-2 rounded-md transition 0.3s ease hover:bg-black hover:text-white hover:cursor-pointer "  >🌓 Theme</button>
                     </li>
                 </ul>
             </nav>
@@ -35,14 +35,14 @@
      <section class="subject mt-[60px] flex flex-col justify-center items-center gap-6 ">
          <span><i class="fa-solid fa-book"></i>All Available Subjects</span>
          <div class="subject-list flex flex-col justify-center items-center gap-6 ">
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/physics.png" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/chem.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/mathematics-png.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/360_F_370426690_Pejt9KxjWTHPklsKwripaxr0iA17zupF.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/Archimio.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/Biology-Photosynthesis-Presentation-in-Green-Yellow-illustrative-style.png" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/guidelines-2.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
-                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="/Images/archimio-1-1.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/physics.png" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/chem.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/mathematics-png.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/360_F_370426690_Pejt9KxjWTHPklsKwripaxr0iA17zupF.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/Archimio.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/Biology-Photosynthesis-Presentation-in-Green-Yellow-illustrative-style.png" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/guidelines-2.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
+                <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/archimio-1-1.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
          </div>
      </section>
      <section class="important-text px-8 mt-[60px] ">
@@ -79,6 +79,5 @@
                 <a href=""><i class="fa-brands fa-github text-[#444444] fa-lg"></i></a> 
              </div>
      </footer>
-     <script src="script.js"></script>
 </body>
 </html>
