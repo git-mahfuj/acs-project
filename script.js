@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded" , () => {
     const listTxt3 = document.getElementById("text-3")
     const listTxt4 = document.getElementById("text-4")
     const listTxt5 = document.getElementById("text-5")
+    const acsTxt = document.getElementById("acstxt")
+    const homeTxt = document.getElementById("hometxt")
+    const allTxt = document.getElementById("alltxt")
+    const allSub = document.getElementById("allsub")
 
     toggleBtn.addEventListener("click" , () => {
         if(links.classList.contains("hidden")){
@@ -32,9 +36,14 @@ document.addEventListener("DOMContentLoaded" , () => {
         footer.classList.toggle("bg-black")
         changeBtn.classList.toggle("bg-white");
         github.classList.toggle("text-white");
-        home.classList.toggle("text-[#808080]");
-        all.classList.toggle("text-[#808080]");
+        home.classList.toggle("text-[#BBBBBB]");
+        all.classList.toggle("text-[#BBBBBB]");
+        acsTxt.classList.toggle("text-[#BBBBBB]");
+        homeTxt.classList.toggle("text-[#BBBBBB]");
+        allTxt.classList.toggle("text-[#BBBBBB]");
+        links.classList.toggle("text-[#BBBBBB]");
         footerTxt.classList.toggle("text-[#FF8400]");
+        allSub.classList.toggle("text-[#FF8400]");
         listTxt1.classList.toggle("text-white");
         listTxt2.classList.toggle("text-white");
         listTxt3.classList.toggle("text-white");
