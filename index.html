@@ -15,25 +15,25 @@
             <nav class="px-8 py-2 shadow-lg">
                 <div class="flex flex-row w-full justify-between items-center ">
                     <img src="Images/acs.png" class="w-3/6 " alt="">
-                    <i class="fa-solid fa-bars fa-2xl text-gray-500 "></i>
+                    <i id="togglebtn" class="fa-solid fa-bars fa-2xl text-[#808080] "></i>
                 </div>
-                <ul class="flex flex-col justify-center gap-7 mt-8 text-gray-500 font-semibold ">
+                <ul id="links" class="flex flex-col justify-center gap-7 mt-8 text-[#808080] font-semibold transition 0.3s ease">
                     <li class="flex flex-row items-center gap-1  "><i class="fa-brands fa-square-facebook"></i>Group</li>
                     <li class="flex flex-row items-center gap-1  "><i class="fa-brands fa-youtube"></i>Channel</li>
                     <li class="flex flex-row items-center gap-1  "><i class="fa-solid fa-user"></i>Profile</li>
                     <li class="flex flex-row items-center gap-1  ">Contact<i class="fa-brands fa-facebook-messenger"></i></li>
                     <li>
-                        <button onclick="changeMode()" id="changeButton" class="border border-black px-4 py-2 rounded-md transition 0.3s ease hover:bg-black hover:text-white hover:cursor-pointer "  >🌓 Theme</button>
+                        <button id="changeButton" class="border border-black px-4 py-2 rounded-md transition 0.3s ease hover:bg-black hover:text-white hover:cursor-pointer "  >🌓 Theme</button>
                     </li>
                 </ul>
             </nav>
         </section>
      <section class="acs-text w-full flex flex-col justify-center items-center gap-4 mt-20  pb-10 ">
-        <p class="text-[#444444] text-2xl text-center font-semibold #F7F7F7 ">ACS ইঞ্জিনিয়ারিং এডমিশন প্রাইভেট ব্যাচ-২০২৪</p>
-        <span><i class="fa-solid fa-house-chimney text-[#444444] "></i> Home</span>
+        <p class="text-[#808080] text-2xl text-center font-semibold #F7F7F7 ">ACS ইঞ্জিনিয়ারিং এডমিশন প্রাইভেট ব্যাচ-২০২৪</p>
+        <span class="font-semibold"><i class="fa-solid fa-house-chimney text-[#808080] "></i> Home</span>
      </section>
      <section class="subject mt-[60px] flex flex-col justify-center items-center gap-6 ">
-         <span><i class="fa-solid fa-book"></i>All Available Subjects</span>
+         <span class="flex justify-center items-center gap-2 font-semibold"><i class="fa-solid fa-book text-blue-500"></i>All Available Subjects</span>
          <div class="subject-list flex flex-col justify-center items-center gap-6 px-4 ">
                 <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/physics.png" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
                 <div class="w-fit transition 0.5s ease hover:tranform hover:scale-[1.1] hover:cursor-pointer"><img src="Images/chem.jpg" class="w-[377px] h-[213px] rounded-xl " alt=""></div>
@@ -72,12 +72,13 @@
             </div>
         </div>
      </section>
-     <footer class="bg-[#F7F7F7] mt-10 p-7 ">
+     <footer id="footer" class="bg-[#F7F7F7] mt-10 p-7 ">
              <p class="text-[#588EEB] font-medium">Apars Classroom © 2022-24 All Rights Reserved | Developed by Apar's Classroom</p>
              <div class="flex justify-between mt-6 ">
                 <p>Coded by Mahfujur Rahman </p>
-                <a href=""><i class="fa-brands fa-github text-[#444444] fa-lg"></i></a> 
+                <a href=""><i id="github" class="fa-brands fa-github text-[#808080] fa-lg"></i></a> 
              </div>
      </footer>
+     <script src="script.js"></script>
 </body>
 </html>
